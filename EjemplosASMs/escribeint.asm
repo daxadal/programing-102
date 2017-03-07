@@ -1,0 +1,225 @@
+; Codigo ASM para TPMV
+; Tecnología de la Programación - FDI (UCM)
+; Marco Antonio Gómez Martín
+;
+; Programa con dos "funciones", una que escribe un entero
+; que recibe como parámetro y otra que hace un cout << endl.
+; La primera se basa en otra función auxiliar que implementa
+; la funcionalidad de forma recursiva.
+;
+; El programa utiliza las funciones anteriores para escribir
+; un 6583 y un 49 en líneas independientes.
+;
+; El código es generado por un pequeño compilador de terceros.
+;
+; El código es generado por un pequeño compilador de terceros.
+;
+JUMP 1
+PUSH 3
+STORE 1
+PUSH 3
+STORE 0
+JUMP 170
+LOAD 0
+PUSH 2
+ADD
+LOAD 2
+STOREIND
+LOAD 0
+PUSH 3
+ADD
+STORE 2
+LOAD 0
+PUSH 4
+ADD
+STORE 0
+LOAD 2
+PUSH 0
+ADD
+LOADIND
+PUSH 0
+eq
+not
+BF 70
+LOAD 0
+PUSH 1
+ADD
+PUSH 45
+STOREIND
+LOAD 0
+PUSH 3
+ADD
+DUP
+LOAD 2
+PUSH 0
+ADD
+LOADIND
+PUSH 10
+DIV
+STOREIND
+POP
+JUMP 6
+LOAD 2
+PUSH 1
+ADD
+LOAD 2
+PUSH 0
+ADD
+LOADIND
+PUSH 10
+DIV
+STOREIND
+PUSH 48
+LOAD 2
+PUSH 0
+ADD
+LOADIND
+ADD
+PUSH 10
+LOAD 2
+PUSH 1
+ADD
+LOADIND
+MUL
+SUB
+OUT
+JUMP 70
+LOAD 2
+PUSH 2
+SUB
+LOADIND
+LOAD 2
+PUSH 3
+SUB
+DUP
+STORE 0
+PUSH 2
+ADD
+LOADIND
+STORE 2
+JUMPIND
+LOAD 0
+PUSH 2
+ADD
+LOAD 2
+STOREIND
+LOAD 0
+PUSH 3
+ADD
+STORE 2
+LOAD 0
+PUSH 3
+ADD
+STORE 0
+LOAD 2
+PUSH 0
+ADD
+LOADIND
+PUSH 0
+EQ
+BF 109
+PUSH 48
+PUSH 0
+ADD
+OUT
+JUMP 125
+LOAD 0
+PUSH 1
+ADD
+PUSH 125
+STOREIND
+LOAD 0
+PUSH 3
+ADD
+DUP
+LOAD 2
+PUSH 0
+ADD
+LOADIND
+STOREIND
+POP
+JUMP 6
+LOAD 2
+PUSH 2
+SUB
+LOADIND
+LOAD 2
+PUSH 3
+SUB
+DUP
+STORE 0
+PUSH 2
+ADD
+LOADIND
+STORE 2
+JUMPIND
+LOAD 0
+PUSH 2
+ADD
+LOAD 2
+STOREIND
+LOAD 0
+PUSH 3
+ADD
+STORE 2
+LOAD 0
+PUSH 2
+ADD
+STORE 0
+PUSH 10
+OUT
+PUSH 13
+OUT
+LOAD 2
+PUSH 2
+SUB
+LOADIND
+LOAD 2
+PUSH 3
+SUB
+DUP
+STORE 0
+PUSH 2
+ADD
+LOADIND
+STORE 2
+JUMPIND
+LOAD 0
+PUSH 1
+ADD
+PUSH 183
+STOREIND
+LOAD 0
+PUSH 3
+ADD
+DUP
+PUSH 6583
+STOREIND
+POP
+JUMP 84
+LOAD 0
+PUSH 1
+ADD
+PUSH 189
+STOREIND
+JUMP 139
+LOAD 0
+PUSH 1
+ADD
+PUSH 202
+STOREIND
+LOAD 0
+PUSH 3
+ADD
+DUP
+PUSH 49
+STOREIND
+POP
+JUMP 84
+LOAD 0
+PUSH 1
+ADD
+PUSH 208
+STOREIND
+JUMP 139
+HALT
